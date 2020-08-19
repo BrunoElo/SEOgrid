@@ -67,7 +67,7 @@ color: #00784D !important;
 
 .steps {
     background-color: #00784D;
-    background-image: url("assets/img/stepsbgimg.png");
+    background-image: url("../img/stepsbgimg.png");
     background-repeat: no-repeat;
     background-position: bottom 40%;
     /* background-size: contain;
@@ -161,7 +161,7 @@ color: #00784D !important;
 }
 
 .testimonial-wrapper {
-    background-image: url("assets/img/testimonialellipse.png");
+    background-image: url("../img/testimonialellipse.png");
     background-repeat: no-repeat;
     background-position: top right;
 }
@@ -216,7 +216,7 @@ color: #00784D !important;
   }
 
 .newsletter {
-    background-image: url("assets/img/newsletterbgimg.png");
+    background-image: url("../img/newsletterbgimg.png");
     background-color: #00B071;
     background-size: cover;
     background-repeat: no-repeat;
@@ -314,7 +314,7 @@ color: #00784D !important;
 
     .steps {
         background-color: #00784D;
-        background-image: url("assets/img/stepsbgimg.png");
+        background-image: url("img/stepsbgimg.png");
         background-repeat: no-repeat;
         background-position: bottom right;
         background-size: 70%;
