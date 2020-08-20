@@ -1,4 +1,25 @@
+// Slider for "how it works" section
+$(document).ready(function () {
+    $('.steps__slider').slick({
+        //setting-name: setting-value
+        dots: true,
+        customPaging: function (slider, i) { //making your custom slick dots
+            return '<div class="custom-dots" id=' + i + "><span>" +0+ (i + 1) + "</span></div>";
+        },
+        //infinite: false,
+        //speed: 300,
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        arrows: false,
+        dotsClass:"vertical-dots"
+    });
+});
 
+
+
+// Slider for testimonial section
 $(document).ready(function () {
     $('.testimonial__slider').slick({
         //setting-name: setting-value
@@ -17,20 +38,3 @@ $(document).ready(function () {
     });
 });
 
-
-$(document).ready(function () {
-    $('.steps__slider').slick({
-        //setting-name: setting-value
-        dots: true,
-        customPaging: function (slider, i) { //making your custom slick dots
-            return '<div class="custom-dots" id=' + i + "><span>" +0+ (i + 1) + "</span></div>";
-        },
-        //infinite: false,
-        //speed: 300,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 5000,
-        arrows: false,
-        dotsClass:"vertical-dots"
-    });
-});

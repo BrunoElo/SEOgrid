@@ -8,6 +8,15 @@ body {
     margin: 0;
 }
 
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0, 120, 77)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  
+  .custom-toggler.navbar-toggler {
+    /* border-color: rgb(0, 120, 77);*/
+    border: none;
+  }  
+
 .navbar-brand {
 font-size: 32px;
 color: #00784D !important;
@@ -150,8 +159,8 @@ color: #00784D !important;
     font-size: 16px;
 }
 
-.btn-start:hover {
-    background-color: #FF3737;
+.btn-start:hover,.btn-start:active, .btn-start:focus {
+    background-color: #FF3737 !important;
     border: none;
 }
 
@@ -235,8 +244,8 @@ color: #00784D !important;
     border: none;
 }
 
-.send-email__btn:hover {
-    background-color: #00784D;
+.send-email__btn:hover, .send-email__btn:active, .send-email__btn:focus {
+    background-color: #00784D !important;
     border: none;
 }
 
@@ -314,7 +323,7 @@ color: #00784D !important;
 
     .steps {
         background-color: #00784D;
-        background-image: url("img/stepsbgimg.png");
+        background-image: url("../img/stepsbgimg.png");
         background-repeat: no-repeat;
         background-position: bottom right;
         background-size: 70%;
@@ -323,13 +332,13 @@ color: #00784D !important;
 
     .steps__title {
         color: #24FE95;
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-weight: 600;
     }
     
     .steps__description {
         color: white;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 500;
     }
 
@@ -391,12 +400,20 @@ color: #00784D !important;
         width: 400px;
     }
 
-    .slick-slide {
-        margin: auto 2%;
-    }
+    /* .slick-slide {
+        margin-left: 1%;
+    } */
 
     .steps {
         background-size: 60%;
+    }
+
+    .steps__title {
+        font-size: 2rem;
+    }
+    
+    .steps__description {
+        font-size: 1.5rem;
     }
 
     /* Styling your custom slick dots start */
